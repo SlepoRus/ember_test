@@ -1,0 +1,12 @@
+{{#if number}}
+  <input
+    type={{type}}
+    placeholder={{placeholder}}
+    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    maxlength={{max}} class={{class}} required>
+{{else}}
+  <input
+    type={{type}}
+    placeholder={{placeholder}}
+    maxlength={{max}} class={{class}} required>
+{{/if}}

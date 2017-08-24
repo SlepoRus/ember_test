@@ -1,0 +1,124 @@
+@import url('./colors.less');
+
+.fix-pos() {
+  margin:10px;
+  padding:5px;
+}
+
+.landing-block {
+  background-color: @BACKGROUND_COLOR_NOHOVER;
+  margin:40px;
+  min-height:500px;
+  h2 {
+    padding-top:15px;
+    text-align: center;
+  }
+  transition: .2s ease;
+  &:hover {
+    background-color: @BACKGROUND_COLOR_HOVER;
+  }
+}
+
+.transfer {
+  background-color: @TRANSFER_COLOR;
+  min-height: 300px;
+  max-width: 500px;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border:1px solid white;
+  transition: .5s ease;
+  img {
+    padding-left:40px;
+    display:block;
+    margin:auto 0;
+    @media (max-width: 768px) {
+      display:none;
+    }
+  }
+  &:hover {
+    border:1px solid @DEEP_SKY_BLUE ;
+  }
+}
+
+.transfer-block {
+  background-color: @TRANSFER_COLOR;
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+
+}
+
+.frame-money {
+  height:20px;
+  width: 190px;
+  margin:10px;
+  input {
+    max-width:71px!important;
+    min-width:71px!important;
+    margin:0!important;
+    &:disabled {
+      background-color: transparent ;
+    }
+  }
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="text"],input[type="month"], input[type="number"] {
+  min-width: 175px;
+  outline: none;
+  border:1px solid white;
+  border-bottom:1px solid #AAA;
+  transition: .4s ease;
+  font-size: 11px;
+  .fix-pos();
+  &:focus {
+    border-bottom:1px solid #444;
+  }
+}
+input[type="month"] {
+  min-width:120px!important;
+  max-width:120px!important;
+}
+button {
+  border:0;
+  outline: none;
+  min-width: 187px;
+  .fix-pos();
+  background-color:@BUTTON_ACCESS_COLOR;
+  height:25px;
+  color:white;
+  cursor:pointer;
+  &:hover {
+    opacity: .9;
+  }
+  &:active {
+    opacity: .8;
+  }
+}
+.transfer-double {
+  display:flex;
+  flex-direction: row;
+  width:160px;
+  input {
+    height:15px;
+    min-width: 63px;
+    max-width: 71px;
+  }
+}
+
+.CCV {
+  min-width:10px!important;
+  max-width:24px!important;
+}

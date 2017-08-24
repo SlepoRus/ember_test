@@ -1,0 +1,17 @@
+<div class="transfer-block">
+  {{input-text type="number" number="true" placeholder="Card number"  max="16"}}
+  <div class="transfer-double">
+    {{input-text type="month" placeholder="Expiration date"}}
+    {{input-text type="number" number="true" placeholder="CCV" max="3" class="CCV"}}
+  </div>
+  {{money-input placeholder="100"}}
+  <div class="transfer-double">
+    {{input-text type="text" placeholder="First name"}}
+    {{input-text type="text" placeholder="Last name"}}
+  </div>
+  {{input-text type="text" placeholder="Country"}}
+  {{input-text type="text" placeholder="City"}}
+  {{input-text type="number" number="true" max="10" placeholder="Zip or postal code"}}
+  {{input-text type="text" placeholder="Phone number"}}
+  {{input-button text="Purchase"}}
+</div>

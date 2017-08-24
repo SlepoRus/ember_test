@@ -1,0 +1,5 @@
+<div class="frame-money">
+  $<input type="text" oninput={{action "changed"}} placeholder="100">
+  ฿<input type="text" disabled value={{calculateValue}} placeholder="100000">
+  {{log calculateValue}}
+</div>
